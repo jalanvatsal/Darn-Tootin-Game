@@ -56,3 +56,10 @@ The skeleton program you are to complete has all of the class definitions and im
 Complete the implementation in accordance with the description of the game. You are allowed to make whatever changes you want to the private parts of the classes: You may add or remove private data members or private member functions, or change their types. You must not make any deletions, additions, or changes to the public interface of any of these classes — we're depending on them staying the same so that we can test your programs. You can and will, of course, make changes to the implementations of public member functions, since the callers of the function wouldn't have to change any of the code they write to call the function. You must not declare any public data members, nor use any global variables whose values may change during execution (so global constants are OK). You may add additional functions that are not members of any class. The word friend must not appear in your program.
 
 Any member functions you implement must never put an object into an invalid state, one that will cause a problem later on. (For example, bad things could come from placing a Tooter outside the city.) Any function that has a reasonable way of indicating failure through its return value should do so. Constructors pose a special difficulty because they can't return a value. If a constructor can't do its job, we have it write an error message and exit the program with failure by calling exit(1);. (We haven't learned about throwing an exception to signal constructor failure.)
+
+STEPS TO RUN THE GAME:
+1) Initialize a Game object in the main routine of toot.cpp following this format: Game(int rows, int cols, int nTooters);
+2) Call the .play() method on the Game object that you have just instantiated
+3) Save and close toot.cpp
+4) Compile toot.cpp file with a compiler of your choice
+5) Navigate to the directory where the executable file is located and type in the command ./toot on your terminal to play! 
